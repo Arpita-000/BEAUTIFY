@@ -75,7 +75,7 @@ const Register = () => {
           },
         });
 
-        // Redirect to login page after successful Google sign-up
+        
         setTimeout(() => {
           navigate("/login");
         }, 3000);

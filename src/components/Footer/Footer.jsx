@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Explore Column */}
+          
           <div>
             <h4 className="font-['Playfair_Display'] text-2xl text-white mb-4 border-b-2 border-[#FF52A0] inline-block pb-2">
               explore
@@ -92,7 +92,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Support Column */}
+          
           <div>
             <h4 className="font-['Playfair_Display'] text-2xl text-white mb-4 border-b-2 border-[#FF52A0] inline-block pb-2">
               support
@@ -134,7 +134,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Essence Column */}
+          
           <div>
             <h4 className="font-['Playfair_Display'] text-2xl text-white mb-4 border-b-2 border-[#FF52A0] inline-block pb-2">
               the essence
@@ -177,7 +177,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Bottom */}
+        
         <div className="text-center pt-6 border-t border-dashed border-[#C8AAAA] text-[#f0c0d0] text-sm">
           <p>
             © 2025 Beautify —  | All rights reserved

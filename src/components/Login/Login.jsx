@@ -16,7 +16,7 @@ const Login = () => {
   const [isGoogleLoading, setIsGoogleLoading] = useState(false);
   const [toastMessage, setToastMessage] = useState(null);
 
-  // Show floating toast notification
+  
   const showToast = (message, type = "error") => {
     setToastMessage({ message, type });
     setTimeout(() => {
@@ -77,7 +77,7 @@ const Login = () => {
         }, 3000);
       })
       .catch((err) => {
-        // Check if error is due to non-existent user
+        
         if (
           err.code === "auth/user-not-found" ||
           err.message.includes("user-not-found")
@@ -166,7 +166,7 @@ const Login = () => {
         }, 3000);
       })
       .catch((err) => {
-        // Check for user not found error
+        
         if (
           err.code === "auth/user-not-found" ||
           err.message.includes("user-not-found")
@@ -321,7 +321,7 @@ const Login = () => {
       )}
 
       <div className="flex flex-col lg:flex-row max-w-6xl w-full bg-white/75 backdrop-blur-md rounded-[32px_16px_32px_16px] shadow-[0_30px_50px_-20px_rgba(129,0,209,0.25),0_0_0_1px_rgba(200,170,170,0.2)] border border-white/50 overflow-hidden">
-        {/* Left side - Login Form */}
+       
         <div className="flex-1 p-8 lg:p-12 flex flex-col justify-center">
           <h2 className="font-['Playfair_Display'] text-3xl lg:text-4xl font-semibold text-[#8100D1] mb-2">
             welcome back
@@ -331,7 +331,7 @@ const Login = () => {
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-5 fieldset">
-            {/* Email Field */}
+            
             <div className="space-y-1">
               <label
                 htmlFor="email"
@@ -357,7 +357,7 @@ const Login = () => {
               </div>
             </div>
 
-            {/* Password Field with Eye Toggle */}
+            
             <div className="space-y-1">
               <label
                 htmlFor="password"
@@ -392,10 +392,10 @@ const Login = () => {
                 </button>
               </div>
 
-              {/* Error message removed from here - now using toast only */}
+              
             </div>
 
-            {/* Remember Me & Forgot Password */}
+            
             <div className="flex justify-between items-center">
               <label className="flex items-center gap-2 text-sm text-[#5f4d5f] cursor-pointer">
                 <input
@@ -415,7 +415,7 @@ const Login = () => {
               </button>
             </div>
 
-            {/* Sign In Button with Loading Spinner */}
+            
             <button
               type="submit"
               disabled={isLoading}
@@ -453,7 +453,7 @@ const Login = () => {
             </button>
           </form>
 
-          {/* Social Login */}
+          
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-6">
             <button
               onClick={hangleGoogleSignIn}
@@ -542,7 +542,7 @@ const Login = () => {
             </button>
           </div>
 
-          {/* Create Account Prompt */}
+          
           <div className="mt-8 text-center text-[#6b4e6b] text-base">
             New to Beautify?{" "}
             <Link
@@ -554,17 +554,17 @@ const Login = () => {
           </div>
         </div>
 
-        {/* Right side - Image */}
+        
         <div className="flex-1 relative bg-gradient-to-br from-[#FFA47F]/10 to-[#C8AAAA]/10 overflow-hidden min-h-[500px] lg:min-h-[600px]">
           <img
             src="https://i.ibb.co/cS32smV8/shamblen-studios-xw-M61-TPMl-Yk-unsplash.jpg"
             alt="beauty model"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          {/* Soft overlay for better text readability */}
+          
           <div className="absolute inset-0 bg-gradient-to-t from-[#8100D1]/20 via-transparent to-transparent"></div>
 
-          {/* Floating quote */}
+          
           <div className="absolute bottom-8 left-8 text-white font-['Playfair_Display'] text-lg lg:text-xl drop-shadow-lg bg-[#8100D1]/40 backdrop-blur-sm px-5 py-2.5 rounded-[40px] border border-white/40 flex items-center gap-2 z-10">
             <i className="fas fa-sparkles text-[#FFA47F]"></i> radiant access
           </div>

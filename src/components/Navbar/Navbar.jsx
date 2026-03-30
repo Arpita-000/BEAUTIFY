@@ -196,7 +196,7 @@ const Navbar = () => {
           )}
         </NavLink>
 
-        {/* Conditional Auth Section */}
+        
         {user ? (
           <div className="dropdown dropdown-end ml-2">
             <div
