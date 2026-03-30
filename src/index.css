@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Import Font Awesome */
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+/* Custom keyframes for glitter animation */
+@keyframes glitterMove {
+    0% {
+        opacity: 0.4;
+        background-position: 0% 0%;
+    }
+
+    50% {
+        opacity: 0.7;
+        background-position: 50% 50%;
+    }
+
+    100% {
+        opacity: 0.5;
+        background-position: 100% 100%;
+    }
+}
+
+.animate-glitter {
+    animation: glitterMove 8s infinite alternate;
+}
+
+@keyframes ping {
+
+    75%,
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.animate-ping {
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
